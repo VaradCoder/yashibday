@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Yashika 💛</title>
+
+  <link rel="shortcut icon" href="assets/images/1.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 id="heroTitle">Happy Birthday, Yashika 💛</h1>
+    <p id="heroSub">This little corner of the internet is just for you.</p>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<section class="slider-section">
+  <h2>Memories 📸</h2>
+  <div class="slider-wrapper">
+    <div class="slider" id="slider"></div>
+    <div class="nav prev" id="prev">‹</div>
+    <div class="nav next" id="next">›</div>
+  </div>
+</section>
+
+<div class="divider"><span>✦</span></div>
+
+<section class="envelope-section">
+  <h2 class="envelope-title">A Letter For You 💌</h2>
+  <div class="envelope-box" id="openLetter">
+    <div class="flap" id="flap"></div>
+  </div>
+</section>
+
+<div class="overlay" id="overlay"></div>
+  <div class="letter" id="letter">
+    <div class="close" id="close">✕</div>
+      <div class="letter-content" id="letterText">
+        Dear Bestie,
+
+        10 March… tujhe yaad hai? Maths exam wala din.
+        Shayad tujhe sirf exam yaad ho, but mere liye wo din thoda zyada tha — kyunki uske baad hum dono apni-apni raahon pe chal gaye. Roz teri bandar jaisi shakal dekhne ki jo aadat ho gayi thi na, achanak sab ruk sa gaya. Boards ke saath school bhi khatam ho gaya… aur shayad wahi pe hum bhi thode khatam ho gaye.
+
+        Humne bohot wade kiye the — “milte rahenge, touch mein rahenge” — par sach ye hai ki hum mil hi nahi paaye. (Aur haan, main abhi bhi thoda sa gussa hoon ki tu mere birthday pe nahi aayi.) Phir time itna tez bhaaga ki pata hi nahi chala, aur tera college start ho gaya.
+
+        Jo hum roz baat karte the, wo dheere-dheere sirf texts tak aa gaya… aur phir texts bhi kam ho gaye. Beech mein tera smybh wala boyfriend aa gaya, aur mujhe laga jaise tu thodi badal si gayi. Jab maine tujhe unblock kiya, tu rude thi… thodi selfish bhi (okay, ye tu abhi bhi hai 😌). Aur us waqt mujhe sach mein bura laga. Ek hi insaan tha jispe bina soche bharosa kiya tha, aur laga jaise wahi insaan mujhse door ho raha hai.
+
+        Main frustrated tha — shayad isliye nahi ki tu badal rahi thi, balki isliye kyunki mujhe lag raha tha ki friendship mein efforts sirf main hi laga raha hoon. Aur jab apna insaan badalta hai na, toh dard zyada hota hai.
+
+        Par phir… dheere-dheere tu wapas normal hui. Meri wali tu.
+        Haan, tu abhi bhi time pe message nahi karti (hump 😤), par kam se kam tu tu toh hai.
+
+        Aur aaj… poore 1.11 saal ke baad hum mil rahe hain.
+
+        Happy Birthday, Dumbo 💛
+      </div>
+    </div>
+<div class="divider"><span>✦</span></div>
+
+<section class="wishes">
+  <h2>A Few Wishes 🌙</h2>
+  <div class="cards">
+    <div class="card">✨ Keep smiling</div>
+    <div class="card">💛 Never stop being you</div>
+    <div class="card">🌟 You matter. Always.</div>
+  </div>
+</section>
+
+<section class="final">
+  <h2>"Some people make life softer just by being in it."</h2>
+  <button class="replay" id="replayBtn">Replay ✨</button>
+</section>
+
+<!-- Audio -->
+<audio id="bgMusic" preload="auto" loop playsinline>
+  <source src="assets/audio/yaado-ke.mp3" type="audio/mpeg">
+</audio>
+
+<button id="muteToggle">▶️ Play Music</button>
+
+<script src="script.js"></script>
+</body>
+</html>
