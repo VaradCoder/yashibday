@@ -88,13 +88,23 @@
   <button class="replay" id="replayBtn">Replay ✨</button>
 </section>
 
-<!-- Audio -->
+<!-- Audio Start Overlay -->
+<div id="audioGate">
+  <div class="gate-content">
+    <h2>💛 For the best experience</h2>
+    <p>Tap to start the music</p>
+    <button id="startExperience">▶️ Start</button>
+  </div>
+</div>
+
 <audio id="bgMusic" preload="auto" loop playsinline>
   <source src="assets/audio/yaado-ke.mp3" type="audio/mpeg">
 </audio>
 
+  
 <button id="muteToggle">▶️ Play Music</button>
 
 <script src="script.js"></script>
 </body>
+
 </html>
