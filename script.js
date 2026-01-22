@@ -86,6 +86,33 @@ muteToggle.onclick=()=>{
   muteToggle.textContent=bgMusic.muted?'🔇':'🔊';
 };
 
+const bgMusic = document.getElementById('bgMusic');
+const muteToggle = document.getElementById('muteToggle');
+const audioGate = document.getElementById('audioGate');
+const startBtn = document.getElementById('startExperience');
+
+let started = false;
+
+startBtn.addEventListener('click', () => {
+  bgMusic.currentTime = 24;
+  bgMusic.volume = 0.5;
+
+  bgMusic.play().then(() => {
+    started = true;
+    audioGate.style.display = 'none';
+    muteToggle.textContent = '🔊';
+  }).catch(err => {
+    console.log('Audio blocked:', err);
+  });
+});
+
+muteToggle.addEventListener('click', () => {
+  if (!started) return;
+  bgMusic.muted = !bgMusic.muted;
+  muteToggle.textContent = bgMusic.muted ? '🔇' : '🔊';
+});
+
+
 /* Confetti + Replay */
 replayBtn.onclick=()=>{
   for(let i=0;i<60;i++){
@@ -100,3 +127,4 @@ replayBtn.onclick=()=>{
   window.scrollTo({top:0,behavior:'smooth'});
   setTimeout(()=>location.reload(),1800);
 };
+
