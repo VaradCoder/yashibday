@@ -127,3 +127,41 @@ body{
   background:#FFD84D;border:3px solid #000;
   font-size:1rem;cursor:pointer;
 }
+
+
+#audioGate{
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle,#1a0a3e,#0a0015);
+  display:grid;
+  place-items:center;
+  z-index:10000;
+}
+
+.gate-content{
+  text-align:center;
+  color:#FFD84D;
+}
+
+.gate-content h2{
+  font-family:'Playfair Display',serif;
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.gate-content p{
+  margin-bottom:25px;
+  opacity:.8;
+}
+
+#startExperience{
+  padding:14px 40px;
+  font-size:1.1rem;
+  border-radius:50px;
+  border:3px solid #000;
+  background:#FFD84D;
+  font-weight:700;
+  cursor:pointer;
+}
+
+
